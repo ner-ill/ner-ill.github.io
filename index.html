@@ -1,9 +1,171 @@
-<!doctype html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>兎屋</title><link rel="stylesheet" href="style.css"></head><body>
-<header class="hero"><div><h1>兎屋</h1><p>絵を描いたり、<br>物語をつくったり。</p><p>世界を紡ぐ<br>創作サイト。</p><a href="#works">Scroll</a></div></header>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>兎屋</title>
+
+  <meta name="description" content="絵を描いたり、物語をつくったり。世界を紡ぐ創作サイト『兎屋』">
+  <meta property="og:title" content="兎屋">
+  <meta property="og:description" content="絵を描いたり、物語をつくったり。世界を紡ぐ創作サイト。">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+
+  <!-- ▼ hero.jpg に差し替え -->
+  <div class="hero-image">
+    <img src="images/hero.jpg" alt="兎屋メインビジュアル">
+  </div>
+
+  <div class="hero-overlay">
+    <h1>兎屋</h1>
+
+    <p class="catch">
+      絵を描いたり、<br>
+      物語をつくったり。
+    </p>
+
+    <p class="sub">
+      世界を紡ぐ<br>
+      創作サイト。
+    </p>
+
+    <a class="scroll" href="#works">
+      Scroll
+    </a>
+  </div>
+
+</header>
+
 <main>
-<section id="works"><h2>Original Game</h2><article class="card"><div class="ph">作品画像</div><h3>鏡の中のEuphoria</h3><p>ここに作品紹介を書きます。</p><a href="#">詳細を見る →</a></article></section>
-<section><h2>Gallery</h2><div class="grid"><div class="thumb">Image</div><div class="thumb">Image</div><div class="thumb">Image</div><div class="thumb">Image</div><div class="thumb">Image</div><div class="thumb">Image</div></div></section>
-<section><h2>Profile</h2><p>プロフィールを書きます。</p></section>
-<section><h2>Commission</h2><p>受付状況などを書きます。</p></section>
-<section><h2>SNS</h2><p>X / Pixiv / BOOTH / Mail</p></section>
-</main><script src="script.js"></script></body></html>
+
+<section id="works" class="section">
+
+  <div class="section-title">
+    <span>Original Game</span>
+    <h2>作品</h2>
+  </div>
+
+  <article class="work-card">
+
+    <div class="work-image">
+      <!-- ▼ game-euphoria.jpg -->
+      <img src="images/works/game-euphoria.jpg"
+           alt="鏡の中のEuphoria">
+    </div>
+
+    <div class="work-body">
+
+      <h3>鏡の中のEuphoria</h3>
+
+      <p>
+        ここに作品紹介を書きます。
+        2〜4行程度がおすすめです。
+      </p>
+
+      <a href="games/euphoria.html" class="button">
+        詳細を見る →
+      </a>
+
+    </div>
+
+  </article>
+
+  <!-- ▼作品追加時は article.work-card を丸ごとコピー -->
+
+</section>
+
+<section id="gallery" class="section">
+
+  <div class="section-title">
+    <span>Gallery</span>
+    <h2>イラスト</h2>
+  </div>
+
+  <div class="gallery-grid">
+
+    <figure>
+      <img src="images/gallery/01.jpg" alt="">
+    </figure>
+
+    <figure>
+      <img src="images/gallery/02.jpg" alt="">
+    </figure>
+
+    <figure>
+      <img src="images/gallery/03.jpg" alt="">
+    </figure>
+
+    <figure>
+      <img src="images/gallery/04.jpg" alt="">
+    </figure>
+
+    <figure>
+      <img src="images/gallery/05.jpg" alt="">
+    </figure>
+
+    <figure>
+      <img src="images/gallery/06.jpg" alt="">
+    </figure>
+
+  </div>
+
+</section>
+
+<section id="profile" class="section">
+  <div class="section-title">
+    <span>Profile</span>
+    <h2>プロフィール</h2>
+  </div>
+
+  <div class="profile-box">
+    <img src="images/profile.jpg" alt="プロフィール画像">
+    <div>
+      <p>絵を描いたり、ゲームを制作したりしています。</p>
+      <p>幻想・ダークファンタジーを中心に創作しています。</p>
+    </div>
+  </div>
+</section>
+
+<section id="commission" class="section">
+  <div class="section-title">
+    <span>Commission</span>
+    <h2>ご依頼</h2>
+  </div>
+
+  <p>現在の受付状況やご依頼内容を掲載します。</p>
+</section>
+
+<section id="sns" class="section">
+  <div class="section-title">
+    <span>SNS</span>
+    <h2>Link</h2>
+  </div>
+
+  <nav class="sns-links">
+    <a href="#">X</a>
+    <a href="#">Pixiv</a>
+    <a href="#">BOOTH</a>
+    <a href="#">Mail</a>
+  </nav>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 兎屋 All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
