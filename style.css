@@ -71,10 +71,11 @@ nav a:hover,nav a[aria-current]{
   font-size:10px;
   letter-spacing:.18em
 }
-.intro h1,h2{
-  font-family:var(--serif);
-  font-weight:500;
-  letter-spacing:.1em
+.intro h1,
+.intro h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  letter-spacing: 0.1em;
 }
 .intro h1{
   margin:0;
