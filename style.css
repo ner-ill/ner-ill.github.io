@@ -99,7 +99,6 @@ h2 {
   margin: 0;
   font-size: clamp(24px, 4.8vw, 33px);
   line-height: 1.6;
-  color:red;
 }
 
 .lead {
