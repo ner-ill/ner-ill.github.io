@@ -1,173 +1,404 @@
+<!-- =====================================================
+     index.html（修正版・前半）
+====================================================== -->
+
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>兎屋</title>
 
-  <meta name="description" content="絵を描いたり、物語をつくったり。世界を紡ぐ創作サイト『兎屋』">
-  <meta property="og:title" content="兎屋">
-  <meta property="og:description" content="絵を描いたり、物語をつくったり。世界を紡ぐ創作サイト。">
-  <meta property="og:type" content="website">
+<meta charset="UTF-8">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+<title>兎屋</title>
+
+<meta
+name="description"
+content="絵を描いたり、物語をつくったり。世界を紡ぐ創作サイト。">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="style.css">
+
 </head>
 
 <body>
 
-<header class="hero">
+<header class="site-header">
 
-  <!-- ▼ hero.jpg に差し替え -->
-  <div class="hero-image">
-    <img src="images/hero.jpg" alt="兎屋メインビジュアル">
-  </div>
+<nav class="global-nav">
 
-  <div class="hero-overlay">
-    <h1>兎屋</h1>
+<a href="#works">
+Game
+</a>
 
-    <p class="catch">
-      絵を描いたり、<br>
-      物語をつくったり。
-    </p>
+<a href="#gallery">
+Gallery
+</a>
 
-    <p class="sub">
-      世界を紡ぐ<br>
-      創作サイト。
-    </p>
+<a href="#commission">
+Commission
+</a>
 
-    <a class="scroll" href="#works">
-      Scroll
-    </a>
-  </div>
+<a href="#about">
+About
+</a>
+
+</nav>
 
 </header>
 
+<section class="hero">
+
+<div class="hero-image">
+
+<img
+src="images/hero.jpg"
+alt="兎屋">
+
+</div>
+
+<div class="hero-overlay">
+
+<h1>
+
+兎屋
+
+</h1>
+
+<p class="catch">
+
+絵を描いたり、<br>
+物語をつくったり。
+
+</p>
+
+<p class="sub">
+
+世界を紡ぐ創作サイト。
+
+</p>
+
+<a
+href="#works"
+class="scroll">
+
+Scroll
+
+</a>
+
+</div>
+
+</section>
+
 <main>
 
-<section id="works" class="section">
+<section
+id="works"
+class="section">
 
-  <div class="section-title">
-    <span>Original Game</span>
-    <h2>作品</h2>
-  </div>
+<div class="section-title">
 
-<a href="games/euphoria.html" class="work-link">
-  <article class="work-card">
+<span>
 
-    <div class="work-image">
-      <!-- ▼ game-euphoria.jpg -->
-      <img src="images/works/game-euphoria.jpg"
-           alt="鏡の中のEuphoria">
-    </div>
+Original Game
 
-    <div class="work-body">
+</span>
 
-      <h3>鏡の中のEuphoria</h3>
+<h2>
 
-      <p>
-        ここに作品紹介を書きます。
-        2〜4行程度がおすすめです。
-      </p>
+作品
 
-      <a href="games/euphoria.html" class="button">
-        詳細を見る →
-      </a>
+</h2>
 
-    </div>
+</div>
 
-  </article>
+<a
+href="games/euphoria.html"
+class="work-link">
+
+<article class="work-card">
+
+<div class="work-image">
+
+<img
+src="images/works/game-euphoria.jpg"
+alt="鏡の中のEuphoria">
+
+</div>
+
+<div class="work-body">
+
+<h3>
+
+鏡の中のEuphoria
+
+</h3>
+
+<p>
+
+鏡の世界へ迷い込んだ少女。
+
+失われた記憶を辿りながら、
+感情を宿した住人たちと出会い、
+世界の真実へ近づいていく
+ダークファンタジーADV。
+
+</p>
+
+<span class="button">
+
+詳細を見る →
+
+</span>
+
+</div>
+
+</article>
+
 </a>
-  
-  <!-- ▼作品追加時は article.work-card を丸ごとコピー -->
 
 </section>
 
-<section id="gallery" class="section">
+<section
+id="gallery"
+class="section">
 
-  <div class="section-title">
-    <span>Gallery</span>
-    <h2>イラスト</h2>
-  </div>
+<div class="section-title">
 
-  <div class="gallery-grid">
+<span>
 
-    <figure>
-      <img src="images/gallery/01.jpg" alt="">
-    </figure>
+Gallery
 
-    <figure>
-      <img src="images/gallery/02.jpg" alt="">
-    </figure>
+</span>
 
-    <figure>
-      <img src="images/gallery/03.jpg" alt="">
-    </figure>
+<h2>
 
-    <figure>
-      <img src="images/gallery/04.jpg" alt="">
-    </figure>
+イラスト
 
-    <figure>
-      <img src="images/gallery/05.jpg" alt="">
-    </figure>
+</h2>
 
-    <figure>
-      <img src="images/gallery/06.jpg" alt="">
-    </figure>
+</div>
 
-  </div>
+<div class="gallery-grid">
+
+<figure>
+<img src="images/gallery/01.jpg" alt="">
+</figure>
+
+<figure>
+<img src="images/gallery/02.jpg" alt="">
+</figure>
+
+<figure>
+<img src="images/gallery/03.jpg" alt="">
+</figure>
+
+<figure>
+<img src="images/gallery/04.jpg" alt="">
+</figure>
+
+<figure>
+<img src="images/gallery/05.jpg" alt="">
+</figure>
+
+<figure>
+<img src="images/gallery/06.jpg" alt="">
+</figure>
+
+</div>
 
 </section>
 
-<section id="profile" class="section">
-  <div class="section-title">
-    <span>Profile</span>
-    <h2>プロフィール</h2>
-  </div>
 
-  <div class="profile-box">
-    <img src="images/profile.jpg" alt="プロフィール画像">
-    <div>
-      <p>絵を描いたり、ゲームを制作したりしています。</p>
-      <p>幻想・ダークファンタジーを中心に創作しています。</p>
-    </div>
-  </div>
+<section
+id="commission"
+class="section">
+
+<div class="section-title">
+
+<span>
+
+Commission
+
+</span>
+
+<h2>
+
+ご依頼
+
+</h2>
+
+</div>
+
+<div class="commission">
+
+<p>
+
+イラスト・ゲーム制作などのご依頼を
+受け付けています。
+
+</p>
+
+<div class="commission-list">
+
+<div class="commission-item">
+
+<strong>
+
+イラスト制作
+
+</strong>
+
+<span>
+
+ご相談ください
+
+</span>
+
+</div>
+
+<div class="commission-item">
+
+<strong>
+
+ゲーム制作
+
+</strong>
+
+<span>
+
+現在準備中
+
+</span>
+
+</div>
+
+<div class="commission-item">
+
+<strong>
+
+その他
+
+</strong>
+
+<span>
+
+お問い合わせください
+
+</span>
+
+</div>
+
+</div>
+
+<a
+href="mailto:yourmail@example.com"
+class="button">
+
+お問い合わせ
+
+</a>
+
+</div>
+
 </section>
 
-<section id="commission" class="section">
-  <div class="section-title">
-    <span>Commission</span>
-    <h2>ご依頼</h2>
-  </div>
+<section
+id="about"
+class="section">
 
-  <p>現在の受付状況やご依頼内容を掲載します。</p>
-</section>
+<div class="section-title">
 
-<section id="sns" class="section">
-  <div class="section-title">
-    <span>SNS</span>
-    <h2>Link</h2>
-  </div>
+<span>
 
-  <nav class="sns-links">
-    <a href="#">X</a>
-    <a href="#">Pixiv</a>
-    <a href="#">BOOTH</a>
-    <a href="#">Mail</a>
-  </nav>
+About
+
+</span>
+
+<h2>
+
+兎屋について
+
+</h2>
+
+</div>
+
+<div class="profile-box">
+
+<div class="profile-image">
+
+<img
+src="images/profile.jpg"
+alt="兎屋">
+
+</div>
+
+<div class="profile-text">
+
+<h3>
+
+兎屋
+
+</h3>
+
+<p>
+
+絵を描いたり、
+物語をつくったり。
+
+幻想やダークファンタジーを中心に、
+イラスト・ゲーム・物語を制作しています。
+
+</p>
+
+<div class="links">
+
+<a href="#">X</a>
+
+<a href="#">Pixiv</a>
+
+<a href="#">BOOTH</a>
+
+<a href="#">GitHub</a>
+
+<a href="mailto:yourmail@example.com">
+Mail
+</a>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 </main>
 
 <footer class="footer">
-  <p>© 2026 兎屋 All Rights Reserved.</p>
+
+<p>
+
+© 2026 兎屋
+
+</p>
+
 </footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
