@@ -20,7 +20,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font: 14px/1.9 -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font: 15px/1.75 -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
   letter-spacing: 0.04em;
 }
 
@@ -110,13 +110,17 @@ h2 {
 .home-main .intro .lead {
   margin: 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 16px;
+}
+
+.home-main .intro {
+  padding: 34px 0 28px;
 }
 
 .intro > p:last-child {
   max-width: 470px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .section {
@@ -142,7 +146,7 @@ h2 {
 }
 
 .text-link {
-  font-size: 12px;
+  font-size: 13px;
   white-space: nowrap;
 }
 
@@ -168,7 +172,7 @@ h2 {
   gap: 9px;
   padding: 12px 0;
   border-bottom: 1px solid var(--line);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .news-item time {
@@ -216,7 +220,7 @@ h2 {
 .game-card p {
   margin: 2px 0;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .home-main .game-cards {
@@ -224,7 +228,7 @@ h2 {
 }
 
 .home-main .game-image {
-  aspect-ratio: 16 / 6;
+  aspect-ratio: 16 / 7;
 }
 
 .home-main .game-card h3 {
@@ -273,7 +277,7 @@ h2 {
 .split p {
   margin: 7px 0 14px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .button {
@@ -311,7 +315,7 @@ h2 {
 .inline-links a {
   padding-bottom: 1px;
   border-bottom: 1px solid var(--line);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .inline-links a::after {
@@ -323,7 +327,7 @@ h2 {
 .home-commission > p {
   margin: -5px 0 10px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .about .about-links > div:last-child p {
@@ -389,7 +393,7 @@ small {
 .page-title p {
   margin: 5px 0;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .filters {
@@ -441,7 +445,7 @@ small {
 .empty {
   padding: 25px 0;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .modal {
@@ -491,7 +495,7 @@ small {
 .modal-caption p {
   margin: 3px 0 0;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .modal-controls {
@@ -553,7 +557,7 @@ small {
 .game-content p,
 .game-content li {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .info {
@@ -585,7 +589,7 @@ small {
 }
 
 .extra-links a {
-  font-size: 12px;
+  font-size: 13px;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -593,7 +597,7 @@ small {
 .back {
   display: inline-block;
   margin-top: 22px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 @media (min-width: 700px) {
@@ -617,6 +621,10 @@ small {
 
   .home-main .section {
     padding: 38px 0;
+  }
+
+  .home-main .intro {
+    padding: 42px 0 36px;
   }
 
   .game-cards {
