@@ -160,3 +160,19 @@ h1{font-size:3rem}
   box-shadow:0 20px 60px rgba(0,0,0,.35);
   background:#fff;
 }
+
+
+.work-link{
+  display:block;
+  color:inherit;
+  text-decoration:none;
+}
+
+.work-link .work-card{
+  transition:.25s ease;
+}
+
+.work-link:hover .work-card{
+  transform:translateY(-6px);
+  box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
