@@ -439,9 +439,6 @@ small{
   .site-header,.site-footer,.wrap{
     width:min(100% - 64px,1040px)
   }
-  .intro h1 {
-    font-size: 32px;
-  }
   .site-header{
     padding-top:31px
   }
