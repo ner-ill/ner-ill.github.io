@@ -528,6 +528,10 @@ small {
 }
 
 @media (min-width: 700px) {
+  #intro-title {
+    font-size: 30px;
+  }
+
   .site-header,
   .site-footer,
   .wrap {
