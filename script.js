@@ -8,7 +8,7 @@
   const renderNews = (target, items, limit) => { if (!target) return;
   target.innerHTML = items.slice(0,limit).map(n => `<a class="news-item" href="${n.url || '#'}"><time datetime="${esc(n.date)}">${dateText(n.date)}</time><span>${esc(n.title)}</span><span class="tag">${esc(n.category)}</span></a>`).join('');
   };
-  const gameCard = game => `<a class="game-card" href="${path}games/${esc(game.slug)}.html"><div class="game-image"><img src="${image(game.keyVisual)}" alt="${esc(game.title)}のキービジュアル"></div><div class="details"><div><h3>${esc(game.title)}</h3><p>${esc(game.catchcopy)}</p></div><span class="text-link">見る <span>→</span></span></div></a>`;
+  const gameCard = game => `<a class="game-card" href="${path}games/${esc(game.slug)}.html"><div class="game-image"><img src="${image(game.keyVisual)}" alt="${esc(game.title)}のキービジュアル"></div><div class="details"><div><h3>${esc(game.title)}</h3><p>${esc(game.catchcopy)}</p></div></div></a>`;
   const renderGames = (target, items, limit) => { if (target) target.innerHTML = items.slice(0,limit).map(gameCard).join('');
   };
   const galleryButton = (item, index) => `<button class="gallery-button" type="button" data-gallery-index="${index}" aria-label="${esc(item.title)}を拡大表示"><img src="${image(item.thumbnail)}" alt="${esc(item.alt || item.title)}" loading="lazy"></button>`;
@@ -34,6 +34,34 @@
   if(e.key==='Escape') modal.classList.remove('open');
   if(e.key==='ArrowLeft') show(current-1);
   if(e.key==='ArrowRight') show(current+1);
+  });
+  };
+  $('#year') && ($('#year').textContent = new Date().getFullYear());
+  if (window.newsData) { renderNews($('#home-news'), newsData, 3);
+  renderNews($('#news-list'), newsData, newsData.length);
+  }
+  if (window.gamesData) { renderGames($('#home-games'), gamesData, 3);
+  renderGames($('#game-list'), gamesData, gamesData.length);
+  }
+  if (window.galleryData) { const home=$('#home-gallery');
+  if(home){ home.innerHTML=galleryData.slice(0,3).map(galleryButton).join('');
+  attachModal(galleryData.slice(0,3),home);
+  } const full=$('#gallery-list');
+  if(full){ let filtered=galleryData;
+  const draw=()=>{full.innerHTML=filtered.map(galleryButton).join('');attachModal(filtered,full);};
+  draw();
+  $$('.filter').forEach(button=>button.addEventListener('click',()=>{ $$('.filter').forEach(b=>b.classList.toggle('active',b===button));
+  filtered=button.dataset.category==='all'?galleryData:galleryData.filter(item=>item.category===button.dataset.category);
+  draw();
+  }));
+  } }
+  const page = $('[data-game-slug]');
+  if(page && window.gamesData){ const game=gamesData.find(g=>g.slug===page.dataset.gameSlug);
+  if(game){ document.title=`${game.title} | 兎屋`;
+  page.innerHTML=`<div class="game-hero"><img src="${image(game.keyVisual)}" alt="${esc(game.title)}のキービジュアル"></div><article class="game-content"><p class="eyebrow">GAME</p><h1>${esc(game.title)}</h1><p class="catch">${esc(game.catchcopy)}</p><section><h2>Story</h2><p>${esc(game.story)}</p></section><section><h2>Information</h2><dl class="info"><dt>ジャンル</dt><dd>${esc(game.genre)}</dd><dt>公開日</dt><dd>${esc(game.releaseDate)}</dd><dt>対応OS</dt><dd>${esc(game.platform)}</dd><dt>価格</dt><dd>${esc(game.price)}</dd></dl></section><section><h2>Character</h2><ul class="character-list">${game.characters.map(c=>`<li><strong>${esc(c.name)}</strong>　${esc(c.description)}</li>`).join('')}</ul></section><section><h2>Gallery</h2><div class="gallery-grid">${game.gallery.map((g,i)=>galleryButton(g,i)).join('')}</div></section><section><h2>Download</h2><a class="button" href="${esc(game.downloadUrl)}" target="_blank" rel="noopener">ダウンロードページへ ↗</a></section><section><h2>Extra</h2><div class="extra-links">${game.extra.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)} ↗</a>`).join('')}</div></section><a class="back" href="index.html">← Game一覧へ戻る</a></article>`;
+  attachModal(game.gallery,page);
+  } }
+})();
   });
   };
   $('#year') && ($('#year').textContent = new Date().getFullYear());
