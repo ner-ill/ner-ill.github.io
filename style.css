@@ -123,3 +123,40 @@ margin-top:4rem
 .section{padding:4rem 1.2rem}
 h1{font-size:3rem}
 }
+
+.fade-up{
+  opacity:0;
+  transform:translateY(30px);
+  transition:opacity .8s ease,transform .8s ease;
+}
+
+.fade-up.is-visible{
+  opacity:1;
+  transform:none;
+}
+
+.lightbox{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.85);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  pointer-events:none;
+  transition:.3s;
+  z-index:9999;
+}
+
+.lightbox.open{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.lightbox img{
+  max-width:90vw;
+  max-height:90vh;
+  border-radius:16px;
+  box-shadow:0 20px 60px rgba(0,0,0,.35);
+  background:#fff;
+}
