@@ -14,20 +14,26 @@ window.gamesData = [
       { name: '主人公', description: '記憶を失い、鏡の世界で目覚める。' },
       
     ],
-    gallery: [
-      { title: '月を待つ庭', date: '2026-06-01', thumbnail: 'images/games/euphoria-01.svg', full: 'images/games/euphoria-01.svg', alt: '月明かりの庭' },
-      { title: '夜の駅', date: '2026-06-02', thumbnail: 'images/games/euphoria-02.svg', full: 'images/games/euphoria-02.svg', alt: '夜の駅舎' }
-    ],
-    downloadUrl: 'https://example.com/',
-    extra: [
-      { label: '後日談を読む（note）', url: 'https://note.com/' },
-      { label: '設定資料を見る（BOOTH）', url: 'https://booth.pm/' },
-      { label: '18歳以上向け作品はこちら', url: 'https://example.com/' }
-    ]
+    gallery: [],
+    downloadUrl: '',
+    extra: []
   }
 ];
 
 /*
+更新方法
+
+Gallery
+① images/games に画像を追加
+② gallery テンプレートをコピーして追加
+
+Download
+配布開始後に downloadUrl にURLを入力
+
+Extra
+後日談・設定資料・R18作品などを追加する場合は
+extra テンプレートをコピーして追加
+
 新しいゲームを追加するときは、このブロックをコピーして
 window.gamesData 配列の末尾へ追加する。
 既存の最後のゲームデータの閉じ括弧の後ろにカンマを付けてから追加する。
@@ -45,12 +51,38 @@ window.gamesData 配列の末尾へ追加する。
   characters: [
     { name: 'キャラクター名', description: '紹介文' }
   ],
-  gallery: [
-    { title: '画像タイトル', date: '2026-01-01', thumbnail: 'images/games/new-game-01.svg', full: 'images/games/new-game-01.svg', alt: '画像の説明' }
-  ],
+  gallery: [],
   downloadUrl: 'https://example.com/',
-  extra: [
-    { label: '追加コンテンツ', url: 'https://example.com/' }
-  ]
+  extra: []
 }
+
+Gallery テンプレート
+gallery: [
+  {
+    title: 'タイトル',
+    date: '2026-07-16',
+    thumbnail: 'images/games/sample.webp',
+    full: 'images/games/sample.webp',
+    alt: '画像説明'
+  }
+]
+
+Download テンプレート
+downloadUrl: 'https://example.com/'
+
+Extra テンプレート
+extra: [
+  {
+    label: '後日談',
+    url: 'https://example.com/'
+  },
+  {
+    label: '設定資料',
+    url: 'https://example.com/'
+  },
+  {
+    label: '18歳以上向け作品はこちら',
+    url: 'https://example.com/'
+  }
+]
 */
