@@ -2,7 +2,7 @@
 window.newsData = [
   { date: '2026-07-12',
   category: 'UPDATE',
-  title: 'ゲーム「Euphoria」特設ページを公開しました。',
+  title: 'ゲーム「鏡の中のEuphoria」特設ページを公開しました。',
   url: '../games/euphoria.html' },
   { date: '2026-07-05',
   category: 'GALLERY',
@@ -12,8 +12,4 @@ window.newsData = [
   category: 'INFO',
   title: '兎屋を開設しました。',
   url: '../news/index.html' },
-  { date: '2026-06-15',
-  category: 'EVENT',
-  title: '夏の創作展示に参加します。',
-  url: '#' }
 ];
