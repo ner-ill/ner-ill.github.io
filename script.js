@@ -40,7 +40,7 @@
   if (window.newsData) { renderNews($('#home-news'), newsData, 3);
   renderNews($('#news-list'), newsData, newsData.length);
   }
-  if (window.gamesData) { renderGames($('#home-games'), gamesData, 3);
+  if (window.gamesData) { renderGames($('#home-games'), gamesData, 1);
   renderGames($('#game-list'), gamesData, gamesData.length);
   }
   if (window.galleryData) { const home=$('#home-gallery');
