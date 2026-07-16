@@ -20,7 +20,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font: 15px/1.75 -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
   letter-spacing: 0.04em;
 }
 
@@ -110,11 +110,15 @@ h2 {
 .home-main .intro .lead {
   margin: 0;
   color: var(--muted);
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .home-main .intro {
-  padding: 34px 0 28px;
+  padding: 4px 0;
+}
+
+.home-page .site-header {
+  padding-bottom: 8px;
 }
 
 .intro > p:last-child {
@@ -173,6 +177,7 @@ h2 {
   padding: 12px 0;
   border-bottom: 1px solid var(--line);
   font-size: 13px;
+  line-height: 1.55;
 }
 
 .news-item time {
@@ -221,14 +226,15 @@ h2 {
   margin: 2px 0;
   color: var(--muted);
   font-size: 12px;
+  line-height: 1.55;
 }
 
 .home-main .game-cards {
-  gap: 13px;
+  gap: 8px;
 }
 
 .home-main .game-image {
-  aspect-ratio: 16 / 7;
+  aspect-ratio: 16 / 5;
 }
 
 .home-main .game-card h3 {
@@ -242,8 +248,8 @@ h2 {
 }
 
 .home-main #home-gallery {
-  max-width: 82%;
-  gap: 4px;
+  max-width: 74%;
+  gap: 3px;
 }
 
 .gallery-button {
@@ -428,7 +434,11 @@ small {
 
 .game-list {
   display: grid;
-  gap: 29px;
+  gap: 15px;
+}
+
+.game-list .game-image {
+  aspect-ratio: 16 / 5;
 }
 
 .game-list .game-card h3 {
@@ -496,6 +506,7 @@ small {
   margin: 3px 0 0;
   color: var(--muted);
   font-size: 12px;
+  line-height: 1.55;
 }
 
 .modal-controls {
@@ -558,6 +569,7 @@ small {
 .game-content li {
   color: var(--muted);
   font-size: 13px;
+  line-height: 1.62;
 }
 
 .info {
@@ -590,6 +602,7 @@ small {
 
 .extra-links a {
   font-size: 13px;
+  line-height: 1.55;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -598,6 +611,93 @@ small {
   display: inline-block;
   margin-top: 22px;
   font-size: 13px;
+}
+
+.game-detail-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.game-detail-links a {
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.subpage-content {
+  max-width: 720px;
+  padding: 28px 0 8px;
+}
+
+.subpage-content section {
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+}
+
+.subpage-content h1 {
+  margin: 0 0 10px;
+  font: 500 30px/1.4 var(--serif);
+  letter-spacing: 0.1em;
+}
+
+.subpage-content h2 {
+  margin: 0 0 8px;
+  font-size: 19px;
+}
+
+.subpage-content p,
+.subpage-content li {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.62;
+}
+
+.character-cards {
+  display: grid;
+  gap: 12px;
+}
+
+.character-card {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.character-image-placeholder {
+  aspect-ratio: 1 / 1.25;
+  background: var(--wash);
+}
+
+.character-card h3 {
+  margin: 0 0 3px;
+  font: 500 17px/1.5 var(--serif);
+}
+
+.content-list {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.content-list li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.content-list strong {
+  display: block;
+  color: var(--ink);
+}
+
+.warning-note {
+  color: var(--accent) !important;
+  font-size: 12px !important;
 }
 
 @media (min-width: 700px) {
@@ -624,7 +724,7 @@ small {
   }
 
   .home-main .intro {
-    padding: 42px 0 36px;
+    padding: 4px 0;
   }
 
   .game-cards {
@@ -658,7 +758,7 @@ small {
   }
 
   .game-list .game-card:first-child .game-image {
-    aspect-ratio: 16 / 6;
+    aspect-ratio: 16 / 5;
   }
 
   .game-content {
