@@ -2,17 +2,17 @@
 window.gamesData = [
   {
     slug: 'euphoria',
-    title: 'Euphoria',
-    catchcopy: '眠れない街で、あなたは月を探す。',
+    title: '鏡の中のEuphoria',
+    catchcopy: '鏡の向こうで、失くした記憶を探す。',
     keyVisual: 'images/games/euphoria-keyvisual.svg',
-    story: '永遠に夜が明けない街、リュネ。月の声を聞く少女と、名をなくした旅人は、薄明の在りかを探して歩き出す。静かな選択の先に残るのは、誰かを救うための小さな光。',
-    genre: '探索型アドベンチャー',
-    releaseDate: '2026年 夏予定',
+    story: 'その手鏡には不思議な力があった。記憶を失い、鏡の世界へ迷い込んだ主人公。そこで出会った人物と交流を深めながら、失われた記憶を集め、現実世界への帰還を目指す。',
+    genre: '恋愛アドベンチャーゲーム',
+    releaseDate: '2027年 予定',
     platform: 'Windows / macOS',
     price: '無料',
     characters: [
-      { name: 'フィア', description: '月の声を聞く、街の案内人。' },
-      { name: 'ノア', description: '記憶を失った旅人。' }
+      { name: '主人公', description: '記憶を失い、鏡の世界で目覚める。' },
+      
     ],
     gallery: [
       { title: '月を待つ庭', date: '2026-06-01', thumbnail: 'images/games/euphoria-01.svg', full: 'images/games/euphoria-01.svg', alt: '月明かりの庭' },
