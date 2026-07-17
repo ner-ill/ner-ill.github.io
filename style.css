@@ -69,7 +69,7 @@ nav {
 
 nav a {
   padding: 3px 0;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid var(--line);
 }
 
 nav a:hover,
@@ -150,6 +150,8 @@ h2 {
 }
 
 .text-link {
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--line);
   font-size: 13px;
   white-space: nowrap;
 }
@@ -165,6 +167,10 @@ h2 {
   transform: translateX(3px);
 }
 
+.text-link:hover {
+  border-color: var(--accent);
+}
+
 .news-list {
   border-top: 1px solid var(--line);
 }
@@ -178,6 +184,17 @@ h2 {
   border-bottom: 1px solid var(--line);
   font-size: 13px;
   line-height: 1.55;
+  transition: color 0.2s;
+}
+
+.news-item > span:nth-child(2)::after {
+  content: " →";
+  color: var(--accent);
+  font-size: 10px;
+}
+
+.news-item:hover {
+  color: var(--accent);
 }
 
 .news-item time {
@@ -197,6 +214,12 @@ h2 {
 
 .game-card {
   display: block;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.game-card:hover {
+  transform: translateY(-2px);
 }
 
 .game-image {
@@ -220,6 +243,13 @@ h2 {
   margin: 9px 0 0;
   font: 500 17px/1.5 var(--serif);
   letter-spacing: 0.08em;
+}
+
+.game-card h3::after {
+  content: " →";
+  color: var(--accent);
+  font-family: sans-serif;
+  font-size: 11px;
 }
 
 .game-card p {
@@ -330,6 +360,13 @@ h2 {
   font-size: 10px;
 }
 
+.inline-links a:hover,
+.socials a:hover,
+.game-detail-links a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .home-commission > p {
   margin: -5px 0 10px;
   color: var(--muted);
@@ -356,6 +393,11 @@ h2 {
   content: " ↗";
   color: var(--accent);
   font-size: 10px;
+}
+
+.socials a:hover::after,
+.inline-links a:hover::after {
+  color: var(--ink);
 }
 
 .site-footer {
@@ -605,6 +647,28 @@ small {
   line-height: 1.55;
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.detail-entry h2 a,
+.resource-link,
+.back {
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--line);
+}
+
+.detail-entry h2 a span,
+.resource-link span {
+  margin-left: 4px;
+  color: var(--accent);
+  font-family: sans-serif;
+  font-size: 11px;
+}
+
+.detail-entry h2 a:hover,
+.resource-link:hover,
+.back:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .back {

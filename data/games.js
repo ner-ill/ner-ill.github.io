@@ -1,6 +1,93 @@
 /* slug と同名の HTML ページを games/ に用意すると作品を追加できます。 */
 window.gamesData = [
-  { slug:'euphoria', title:'Euphoria', catchcopy:'眠れない街で、あなたは月を探す。', keyVisual:'images/games/euphoria-keyvisual.svg', story:'永遠に夜が明けない街、リュネ。月の声を聞く少女と、名をなくした旅人は、薄明の在りかを探して歩き出す。静かな選択の先に残るのは、誰かを救うための小さな光。', genre:'探索型アドベンチャー', releaseDate:'2026年 夏予定', platform:'Windows / macOS', price:'無料', characters:[{name:'フィア',description:'月の声を聞く、街の案内人。'},{name:'ノア',description:'記憶を失った旅人。'}], gallery:[{title:'月を待つ庭',date:'2026-06-01',thumbnail:'images/games/euphoria-01.svg',full:'images/games/euphoria-01.svg',alt:'月明かりの庭'},{title:'夜の駅',date:'2026-06-02',thumbnail:'images/games/euphoria-02.svg',full:'images/games/euphoria-02.svg',alt:'夜の駅舎'}], downloadUrl:'https://example.com/', extra:[{label:'後日談を読む（note）',url:'https://note.com/'},{label:'設定資料を見る（BOOTH）',url:'https://booth.pm/'},{label:'18歳以上向け作品はこちら',url:'https://example.com/'}] },
-  { slug:'silence', title:'Silence of the Lake', catchcopy:'湖底に沈んだ手紙を、ひとつずつ。', keyVisual:'images/games/silence-keyvisual.svg', story:'準備中です。', genre:'ノベルゲーム', releaseDate:'制作中', platform:'Windows', price:'未定', characters:[], gallery:[], downloadUrl:'https://example.com/', extra:[] },
-  { slug:'archive', title:'Archive 0', catchcopy:'忘れられた図書館の、最後の司書。', keyVisual:'images/games/archive-keyvisual.svg', story:'準備中です。', genre:'短編アドベンチャー', releaseDate:'制作中', platform:'Windows', price:'未定', characters:[], gallery:[], downloadUrl:'https://example.com/', extra:[] }
+  {
+    slug: 'euphoria',
+    title: '鏡の中のEuphoria',
+    catchcopy: '鏡の向こうで、失くした記憶を探す。',
+    keyVisual: 'images/games/euphoria-keyvisual.svg',
+    story: 'その手鏡には不思議な力があった。記憶を失い、鏡の世界へ迷い込んだ主人公。そこで出会った人物と交流を深めながら、失われた記憶を集め、現実世界への帰還を目指す。',
+    genre: '恋愛アドベンチャーゲーム',
+    releaseDate: '2027年 予定',
+    platform: 'Windows / macOS',
+    price: '無料',
+    characters: [
+      { name: '主人公', description: '記憶を失い、鏡の世界で目覚める。' },
+      
+    ],
+    gallery: [],
+    downloadUrl: '',
+    extra: [],
+    characterUrl: 'euphoria/characters.html',
+    galleryUrl: 'euphoria/gallery.html',
+    novelUrl: '',
+    materialsUrl: '',
+    adultUrl: ''
+  }
 ];
+
+/*
+更新方法
+
+Gallery
+① images/games に画像を追加
+② gallery テンプレートをコピーして追加
+
+Download
+配布開始後に downloadUrl にURLを入力
+
+Character / Gallery
+個別ページを作成した場合は characterUrl / galleryUrl にURLを入力
+
+Novel / Materials / 18+
+作品別の小説・設定資料・成人向け作品のURLを入力
+
+新しいゲームを追加するときは、このブロックをコピーして
+window.gamesData 配列の末尾へ追加する。
+既存の最後のゲームデータの閉じ括弧の後ろにカンマを付けてから追加する。
+
+{
+  slug: 'new-game',
+  title: 'ゲームタイトル',
+  catchcopy: 'キャッチコピー',
+  keyVisual: 'images/games/new-game-keyvisual.svg',
+  story: 'あらすじ',
+  genre: 'ジャンル',
+  releaseDate: '公開日',
+  platform: '対応OS',
+  price: '価格',
+  characters: [
+    { name: 'キャラクター名', description: '紹介文' }
+  ],
+  gallery: [],
+  downloadUrl: '',
+  extra: [],
+  characterUrl: 'new-game/characters.html',
+  galleryUrl: 'new-game/gallery.html',
+  novelUrl: '',
+  materialsUrl: '',
+  adultUrl: ''
+}
+
+Gallery テンプレート
+gallery: [
+  {
+    title: 'タイトル',
+    date: '2026-07-16',
+    thumbnail: 'images/games/sample.webp',
+    full: 'images/games/sample.webp',
+    alt: '画像説明'
+  }
+]
+
+Download テンプレート
+downloadUrl: ''
+
+Character / Gallery テンプレート
+characterUrl: 'new-game/characters.html'
+galleryUrl: 'new-game/gallery.html'
+
+Novel / Materials / 18+ テンプレート
+novelUrl: '' // note の作品別URLを入力
+materialsUrl: ''
+adultUrl: ''
+*/
