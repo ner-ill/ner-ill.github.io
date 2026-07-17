@@ -4,7 +4,7 @@ window.gamesData = [
     slug: 'euphoria',
     title: '鏡の中のEuphoria',
     catchcopy: '鏡の向こうで、失くした記憶を探す。',
-    keyVisual: 'images/games/euphoria-keyvisual.svg',
+    keyVisual: 'images/games/euphoria-keyvisual.webp',
     story: 'その手鏡には不思議な力があった。記憶を失い、鏡の世界へ迷い込んだ主人公。そこで出会った人物と交流を深めながら、失われた記憶を集め、現実世界への帰還を目指す。',
     genre: '恋愛アドベンチャーゲーム',
     releaseDate: '2027年 予定',
