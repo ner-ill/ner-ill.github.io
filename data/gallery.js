@@ -6,7 +6,6 @@ window.galleryData = [
   { title: '無償企画02', date: '2026-05-20', category: 'commission', thumbnail: 'images/gallery/無償企画02.webp', full: 'images/gallery/無償企画02.webp', alt: '', description: 'Xにて募集した無償企画イラスト IRIAMライバーの白骨紅様' },
   { title: 'ミニキャラFA02', date: '2026-05-04', category: 'fanart', thumbnail: 'images/gallery/ミニキャラFA02.webp', full: 'images/gallery/ミニキャラFA02.webp', alt: '', description: 'ミニキャラFA' },
   { title: '翠の森', date: '2026-04-12', category: 'fanart', thumbnail: 'images/gallery/翠の森.webp', full: 'images/gallery/翠の森.webp', alt: '', description: 'ローゼンメイデンFA 翠星石' },
-  { title: 'ポコポケFA', date: '2026-04-12', category: 'fanart', thumbnail: 'images/gallery/ポコポケFA.webp', full: 'images/gallery/ポコポケFA.webp', alt: '', description: 'ポコポケ、Vtuber FA 花狩くれは様' },
   { title: '花嫁', date: '2026-04-12', category: 'fanart', thumbnail: 'images/gallery/花嫁.webp', full: 'images/gallery/花嫁.webp', alt: '', description: '蟲の国の婚礼 Vtuber FA 花狩くれは様' },
 
 ];
