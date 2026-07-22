@@ -1,11 +1,14 @@
 /* category はフィルター用。必要に応じて tags: [] を追加できます。 */
 window.galleryData = [
-  { title: '白い灯', date: '2026-07-01', category: 'original', thumbnail: 'images/gallery/white-lamp.svg', full: 'images/gallery/white-lamp.svg', alt: '白い灯りと花', description: '夜更けの小さな明かり。' },
-  { title: '月の庭', date: '2026-06-18', category: 'original', thumbnail: 'images/gallery/moon-garden.svg', full: 'images/gallery/moon-garden.svg', alt: '月の庭園', description: '眠りにつく前の庭。' },
-  { title: '古書店', date: '2026-06-03', category: 'fanart', thumbnail: 'images/gallery/bookshop.svg', full: 'images/gallery/bookshop.svg', alt: '古書店の室内', description: '好きな作品へのファンアート。' },
-  { title: '窓辺の花', date: '2026-05-20', category: 'commission', thumbnail: 'images/gallery/window-flower.svg', full: 'images/gallery/window-flower.svg', alt: '窓辺の花', description: 'ご依頼で制作した一枚。' },
-  { title: '薄明', date: '2026-05-04', category: 'original', thumbnail: 'images/gallery/dawn.svg', full: 'images/gallery/dawn.svg', alt: '淡い夜明け', description: '' },
-  { title: '星を運ぶ', date: '2026-04-12', category: 'fanart', thumbnail: 'images/gallery/stars.svg', full: 'images/gallery/stars.svg', alt: '星を運ぶ人物', description: '' }
+  { title: '緋鶴', date: '2026-07-01', category: 'original', thumbnail: 'images/gallery/oc緋鶴.webp', full: 'images/gallery/oc緋鶴.webp', alt: '', description: 'oc 朱雀のoc' },
+  { title: 'ミニキャラFA', date: '2026-06-18', category: 'fanart', thumbnail: 'images/gallery/ミニキャラFA.webp', full: 'images/gallery/ミニキャラFA.webp', alt: '', description: 'ミニキャラFA Vtuber　花狩くれは様' },
+  { title: '無償企画', date: '2026-06-03', category: 'commission', thumbnail: 'images/gallery/無償企画.webp', full: 'images/gallery/無償企画.webp', alt: '', description: 'Xにて募集した無償企画イラスト IRIAMライバーの枝葉ルクリア様' },
+  { title: '無償企画02', date: '2026-05-20', category: 'commission', thumbnail: 'images/gallery/無償企画02.webp', full: 'images/gallery/無償企画02.webp', alt: '', description: 'Xにて募集した無償企画イラスト IRIAMライバーの白骨紅様' },
+  { title: 'ミニキャラFA02', date: '2026-05-04', category: 'fanart', thumbnail: 'images/gallery/ミニキャラFA02.webp', full: 'images/gallery/ミニキャラFA02.webp', alt: '', description: 'ミニキャラFA' },
+  { title: '翠の森', date: '2026-04-12', category: 'fanart', thumbnail: 'images/gallery/翠の森.webp', full: 'images/gallery/翠の森.webp', alt: '', description: 'ローゼンメイデンFA 翠星石' },
+  { title: 'ポコポケFA', date: '2026-04-12', category: 'fanart', thumbnail: 'images/gallery/ポコポケFA.webp', full: 'images/gallery/ポコポケFA.webp', alt: '', description: 'ポコポケ、Vtuber FA 花狩くれは様' },
+  { title: '花嫁', date: '2026-04-12', category: 'fanart', thumbnail: 'images/gallery/花嫁.webp', full: 'images/gallery/花嫁.webp', alt: '', description: '蟲の国の婚礼 Vtuber FA 花狩くれは様' },
+
 ];
 
 /*
