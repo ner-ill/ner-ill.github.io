@@ -17,8 +17,10 @@ window.gamesData = [
     gallery: [],
     downloadUrl: '',
     extra: [],
-    characterUrl: 'euphoria/characters.html',
-    galleryUrl: 'euphoria/gallery.html',
+    characterUrl: '',
+    //characterUrl: 'euphoria/characters.html',
+    galleryUrl: '',
+    //galleryUrl: 'euphoria/gallery.html',
     novelUrl: '',
     materialsUrl: '',
     adultUrl: ''
